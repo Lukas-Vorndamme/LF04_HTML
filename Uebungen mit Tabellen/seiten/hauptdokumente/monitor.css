@@ -1,0 +1,44 @@
+body {
+    font-family: Verdana,Tahoma,
+    sans-serif;
+    font-size: 1.2em; 
+    text-align: center;
+    background-color: darkslategrey;
+    margin-top: auto ;
+}
+
+
+
+table{
+    border: 2px solid black;
+   margin: auto;
+    border-collapse: separate;
+}
+td,th{
+    border: 2px solid black;
+    margin: auto;
+    border-collapse: separate;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+tbody{
+    text-align: left;
+}
+a:link{
+   color: white;
+}
+a:visited{
+    color: purple;
+}
+a:focus{
+    background-color: black;
+}
+a:hover{
+    color: blue;
+    text-decoration: aquamarine;
+    cursor:not-allowed ;
+    font-weight: bold;
+}
+a:active{
+    color: red;
+}
