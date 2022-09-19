@@ -1,0 +1,38 @@
+Body{
+    background-image:repeating-linear-gradient(darkred,blue,darkgreen,yellow);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table{
+    border: 2px solid black;
+    margin: auto;
+    border-collapse: separate;}
+td,th{
+    border: 2px solid black;
+    margin: auto;
+    border-collapse: separate;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+tbody{
+    text-align: left;
+}
+
