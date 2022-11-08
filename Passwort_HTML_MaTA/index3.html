@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abfrage Passwort</title>
+</head>
+<body>
+<p id="idiot"> </p>
+</body>
+<script type="text/javascript">
+    let ok = false;
+    for (let i = 0; i < 3 && ok === false; i++ ){
+        let passwort = prompt( i+1 +" Versuch  Was heißt DQM?", "dynamischer ");
+        if(passwort === "dynamischer Quellcodemanipulierer"){
+            location.href = "https://www.szut.de/";
+            ok = true;
+        }else if(ok === false) {
+            document.getElementById("idiot").innerText= "NEIN!! NEIN!! NEIN!! NEIN!!";
+        }
+    }
+
+</script>
+</html>

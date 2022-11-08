@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+  <title>HTML mit Javascript - Beispiel</title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="monitor.css" media="screen">
+
+</head>
+
+<body>
+
+<form id="addition">
+
+  <div>
+
+    <label for="zahl1">
+
+      Zahl 1:
+
+    </label>
+
+    <input name="wert1" id="zahl1" type="number" min="1" max="6" maxlength="1">
+
+    <label for="zahl2">>
+
+      Zahl 2:
+
+    </label>
+
+    <input name="wert2" id="zahl2" type="number" min="1" max="6" maxlength="1">>
+
+    <label for="zahl3">
+
+      Zahl 3:
+
+    </label>
+
+    <input name="wert3" id="zahl3" type="number" min="1" max="6" maxlength="1">
+
+  </div>
+
+  <div>
+
+    <button type="button" name="rechnen" id="summe" onClick="addition()">
+
+      Summe ermitteln
+
+    </button>
+
+  </div>
+
+  <div>
+
+    <label for="ergebnis">
+
+      Summe der Werte:
+
+    </label>
+
+    <output name="berechnet" id="ergebnis">
+
+      0.00
+
+    </output>
+
+  </div>
+
+</form>
+
+<script type="text/javascript">
+
+  let addition = () => {
+
+    let summeWerte = 0;
+
+    for ( let i = 1; i <= 3; i++ ) {
+
+      let elementinhalt = parseInt(document.getElementById("zahl" + i).value);
+
+      summeWerte += elementinhalt;
+
+    }
+
+    document.getElementById("ergebnis").value = summeWerte;
+
+  }
+
+</script>
+
+</body>
+
+</html>
