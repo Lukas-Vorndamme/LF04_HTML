@@ -1,0 +1,41 @@
+#Körperdetails {
+
+    text-align: center;
+    border: 2px solid black;
+}
+#Körperdetails:hover{
+    background-color: gainsboro;
+}
+#tabelle,#h2,#div2,#h1,#h3{
+    text-align: center;
+}
+#tr:hover{
+    background: gainsboro;
+}
+#tr1:hover{
+    background: gainsboro;
+}
+#tr2:hover{
+    background: gainsboro;
+}
+#tr3:hover{
+    background: gainsboro;
+}
+#tr4:hover{
+    background: gainsboro;
+}
+#rechner:hover{
+    color : white;
+    background: black;
+}
+#link:hover {
+    Color: Red;
+    font-size: 1.2rem;
+}
+input:focus{
+    background-color: green;
+}
+#erg{
+    background-color: black;
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lukas Vorndamme">
+ <meta name="viweport" content="<width=device-width, initial-scale=1>">
+  <title>BMI Rechner</title>
+    <script src="BMI.js"></script>
+    <link rel="stylesheet" href="BMI.css">
+    <meta name="robots" content="nofollow">
+    <meta name="robots" content="noindex">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<h1 id="h1">Body-MassIndex-Rechner</h1>
+
+<h2 id="h2">Online-BMI-Berechnung für Erwachsene</h2>
+<div id="div2">
+
+    <img src="füße_auf_wage.jpg" alt="Füße auf einer Körper Wage" id="bild" style="width: 25% ; height: auto"/>
+    <p>Einen BMI-Rechner für Kinder finden sie
+        <a id="link" href="https://www.uebergewicht-vorbeugen.de/wenn-es-schwerer-wird/uebergewicht/bmi-rechner-das-gewicht-im-blick/?L=0">Hier</a>
+    </p>
+</div>
+<div id="Körperdetails" class="rounded-5" >
+    <p>
+        Bitte geben sie ihrer Körpergröße an:
+    </p>
+    <form>
+        <div>
+            <label for="cm">
+                <strong>Körpergröße&nbsp; &nbsp; </strong>
+            </label>
+            <input id="cm" type="number" placeholder="Klörpergröße in cm" max="220" size="3">
+        </div>
+        <p> Bitte geben sie Ihr Körpergewicht ein: </p>
+        <div>
+            <label for="kg">
+            <strong>Körpergewicht</strong>
+            </label>
+            <input id="kg" type="number" placeholder="Körpergewicht in kg" max="300" maxlength="3" size="3">
+
+        </div><br>
+        <div>
+
+            <button type="button" id="rechner" onclick="BMI()">BMI Rechner</button>
+        </div>
+        <div>
+            <label for="erg">
+                Ihr Body-Mass-Index beträgt:
+            </label>
+            <output id="erg"></output>
+        </div>
+    </form>
+</div>
+<h3 id="h3">Bedeutung des BMI-Wertes bei Erwachsenen</h3>
+<div>
+    <table class="table" id="tabelle">
+        <thead>
+        <tr>
+            <th><strong>BMI-Wert</strong></th>
+            <th>Bedeutung</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="tr">
+            <td> < 18,5</td>
+            <td>Untergewicht</td>
+        </tr>
+        <tr id="tr1">
+            <td>18,5 - 24,9</td>
+            <td>Normalgewicht</td>
+        </tr>
+        <tr id="tr3">
+            <td>24,9 - 29,9</td>
+            <td>Übergewicht</td>
+        </tr>
+        <tr id="tr4">
+            <td> > 30</td>
+            <td>Adipositas</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+</html>
